@@ -35,7 +35,7 @@ public class TextResourceReader {
         } catch (IOException e) {
 
             throw new RuntimeException("cant open resource : " + resourceId);
-        } catch (Resources.NotFoundException) {
+        } catch (Resources.NotFoundException ee) {
 
             throw new RuntimeException("cant find resource : " + resourceId);
         }
